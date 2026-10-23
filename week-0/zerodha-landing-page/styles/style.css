@@ -1,0 +1,195 @@
+/* CSS Reset  */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Header and navigation menu section */
+header {
+  display: flex;
+  padding-inline: 10rem;
+  padding-block: 1.2rem;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 1px 2px 0px #eee;
+}
+
+.logo img {
+  /* display: block; */
+  width: 125px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+nav ul li {
+  font-size: 1.6rem;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  color: #666;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: #387ed1;
+}
+
+/* hamburger icon section  */
+
+.hamburger-icon a {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger-icon a div {
+  width: 20px;
+  border: 1px solid black;
+}
+
+/* hero section  */
+
+.hero-section {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+/* hero section : hero image  */
+
+.hero-section .landing-logo {
+  display: flex;
+  justify-content: center;
+  padding-block: 4rem;
+  margin-top: 4rem;
+}
+
+.hero-section .landing-logo img {
+  max-width: 730px;
+  width: 100%;
+}
+
+.hero-section__information .hero-section__information-heading,
+.hero-section__information .hero-section__information-para,
+.hero-section__information .hero-section__information-signup-btn {
+  display: flex;
+  justify-content: center;
+}
+
+/* hero section : information heading  */
+
+.hero-section__information .hero-section__information-heading {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+.hero-section__information-heading h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #333131;
+}
+
+/* hero section : information paragraph  */
+
+.hero-section__information .hero-section__information-para {
+  padding-block: 0.8rem;
+}
+
+.hero-section__information .hero-section__information-para p {
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #424242;
+  text-align: center;
+}
+
+/* hero section : signup button */
+
+.hero-section__information .hero-section__information-signup-btn {
+  margin-top: 2rem;
+  padding-block: 1rem;
+}
+
+.hero-section__information .hero-section__information-signup-btn button {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #387ed1;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 2px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero-section__information .hero-section__information-signup-btn button:hover {
+  background-color: #000;
+}
+
+/* responsive design  */
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+
+  .hamburger-icon a {
+    gap: 3px;
+  }
+
+  .hamburger-icon a div {
+    width: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 38%;
+  }
+  .logo img {
+    width: 90px;
+  }
+
+  .hamburger-icon a {
+    gap: 3px;
+  }
+
+  .hamburger-icon a div {
+    width: 15px;
+  }
+
+  .hero-section .landing-logo img {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .hero-section .landing-logo img {
+    max-width: 300px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .header {
+    padding-inline: 2rem;
+  }
+}
